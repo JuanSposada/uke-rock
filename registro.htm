@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Formulario de Registro</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header id='header'>
+		<img id='header-img' src='/logo2.png' />
+		<nav id='nav-bar'>
+		  <ul>
+			<li> <a class='nav-link'href='/index.html'>Home</a></li>
+			<li>           <a class='nav-link' href='/productos.html'>Productos</a></li>
+			
+			<li>         <a class='nav-link' href='/aprende.html'>Aprende</a></li>
+			<li> <a class='nav-link' href='/registro.htm'>Registrate!</a></li>
+		  </ul>
+		 
+		</nav>
+	  </header>
+	  <div id='separator' ><div>     <section id='welcome'>
+	<div id="content">
+		
+		<h1>Registro de Usuarios</h1>
+		<form id='formulario-registro' action="registro.php" method="post">
+	        <table border="0">
+		        <tr>
+		            <td><label>Nombres</label></td>
+		            <td><input id='nombre'type="text" name="nombreuser" placeholder="Nombres" required/></td>
+		        </tr>
+		        <tr>
+		            <td><label>Apellidos</label></td>
+		            <td><input id="apellido" type="text"  name="apellidosuser" placeholder="Apellidos" required/></td>
+		        </tr>
+		        <tr>
+		            <td><label>Correo electronico</label></td>
+		            <td><input  type="text" name="emailuser" placeholder="example@mail.com" required/></td>
+		        </tr>
+		        <tr>
+		            <td><label>Contrase&ntilde;a</label></td>
+		            <td><input type="password" name="pass" placeholder="**********************" required/></td>
+		        </tr>
+		        <tr>
+		            <td><label>Repetir Contrase&ntilde;a</label></td>
+		            <td><input type="password" name="rpass" placeholder="**********************" required/></td>
+		        </tr>
+		        <tr>
+		            <td>
+					</td>
+					<td><label><input  class='button btn-reset' type="reset" value="Reestablecer"></input></label>
+						<label><input class='button btn-submit' type="submit" value="Registrarme"></input></label></td>
+		        </tr>
+		</form>
+	</div>
+	<script src="script-registro.js"></script>
+</body>
+
+</html>

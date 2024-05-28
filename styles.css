@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body{
+    background-color: #F8F5E6;
+    background-image: url('https://images.pexels.com/photos/346728/pexels-photo-346728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin:0;
+     font-family:"Protest Revolution", sans-serif;
+     color: var(--fontColor);
+    }
+  
+    h1{
+        font-size: 50px;
+    }
+  
+  #header {
+    top:0;
+    left:0;
+    margin: 0;
+    background-color: rgba(255,255,255,0.6);
+    position: fixed;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #header-img{
+    width:150px;
+    padding: 10px;
+  }
+  
+  #nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  li{
+    list-style-type: none;
+    margin-right: 30px;
+  }
+  
+  a{
+    color: inherit
+  }
+  .nav-link{
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  :root{
+    --fontColor:  #2e1705;
+    --bgColor: #F8F5E6;
+  }
+  
+  .nav-link:hover{
+    color: var(--bgColor);
+     background-color: var(--fontColor) 
+    
+  }
+  
+  #separator{
+    height: 150px;
+  }
+  #welcome{
+    margin-top: 50px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  #welcome-img{
+    width: 100vw;
+    padding-left: 15px;
+    max-width: 700px;
+  }
+  
+  #products{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  #video {
+    max-width: 750px
+  }
+  
+  #features ul li{
+    font-size: 24px;
+  }
+  
+  .icon span{
+    font-size:50px
+  }
+  
+  .grid{
+    display: flex;
+    margin: 0 auto;
+  
+  }
+
+  #products{
+    margin-bottom: 50px;
+  }
+  
+
+  
+  #features .icon{
+    display: flex; 
+    justify-content: center;
+  }
+  
+  #features{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5em;
+  }
+  
+  #features .container {
+    margin: -50px auto ;
+    margin-bottom: 40px;
+    background-color: rgba(255,255,255,0.6);
+    margin-bottom: -0px
+  }
+
+  #video-gallery{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+    gap: 1.5rem;
+
+  }
+  
+  .grid{
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .grid .desc{
+    margin-left: 10px;
+  }
+  
+  #orderNow .container{
+    margin-top: 1.5em;
+   display: flex;
+   justify-content: space-evenly; 
+  }
+  
+  .card {
+    display: flex;
+    flex-direction:column;
+    background-color: whiteSmoke;
+    width:250px;
+    height: 550px;
+    border: 1px solid var(--fontColor);
+    margin-top: 15px;
+  }
+  
+  .card .title{
+    background-color:#f5ba62;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .card .price{
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .card .desc{
+    margin-top: 10px;
+   height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  .card .buy{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100%
+  }
+
+  .uke-pic{
+    width: 200px;
+  }
+  
+  #contact .container{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #email{
+    margin: 0 auto;
+    width: 75%;
+    padding: 5px;
+    margin-bottom: 15px
+  }
+  
+  .button {
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    width: 50%;
+  background-color: #2edb90;
+  border: none
+  }
+  
+  .button:hover{
+    cursor: pointer;
+  
+  }
+  
+  #form .button{
+  background-color: #2eb3db
+  }
+  
+  #footer .container{
+    
+    background-color: #f5ba62;
+    width: 75%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  i{
+    width: 50px;
+    height: 50px
+  }
+  
+  
+  
+  @media(max-width: 650px){
+    
+    #header{
+      display: flex;
+      flex-wrap: wrap
+    }
+   #nav-bar ul{
+     display: felx;
+     flex-wrap: wrap;
+   }
+   #orderNow .container{
+     flex-wrap: wrap;
+   }
+    #form h2{
+      text-align: center;
+    }
+    #welcome-img{
+      margin-top: 100px 
+    }
+  }
